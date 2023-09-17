@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root { /*tag global para compor nas classes sem precisa repetir o nome ou exedecimal da cor*/
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-segundaria: 'montserrat', sans-serif;
+}
+
+*{ /*o * serve para marcar todas as tags no html*/
+    margin: 0;
+    padding: 0;
+}
+body { /*corpo da Página no html*/
+    /*height: 100vh; serve para definir a altura dos elementos na página, vh(viewport)*/
+    box-sizing: border-box; /*essa tag faz que o elemnto filho não saia do elemento pai*/
+    background-color: var(--cor-primaria); /*cor do plano de fundo da pagina ou elemento*/
+    color: var(--cor-secundaria); /*serve para mudar a cor do texto*/
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family: var(--fonte-segundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    gap: 82px;
+}
+
+.apresentacao{
+    /*margin: ; serve para aplicar um espaçamento na margin na pagina, com isso, tirando o espaçamento dos elementos*/
+    padding: 7% 15%; /*serve para aplicar um espaçamento na margin na pagina, com isso, tirando o espaçamento dos elementos*/
+    display: flex; /*serve para alinhar os elementos na página*/
+    align-items: center; /*serve para centralizar os elementos na página*/
+    justify-content: space-between; /*serve para afastar cada elemento filho na página*/
+}
+
+
+.apresentacao_conteudo {
+    width: 50%; /*propriedade que define a largura dos elementos na página*/
+    display: flex;
+    flex-direction: column; /*define como os flex items são colocados no flex container definindo o eixo principal e a direção*/
+    gap: 40px; /*propriedade que define o espaçamento dos elementos filhos*/
+}
+
+.apresentacao_titulo{
+    font-size: 2.25rem; /*propriedade para deifinir o tamanho de um texto*/
+    font-family: var(--fonte-primaria); /*propriedade para que determina a face de fonte específica usada para renderizar caracteres.*/
+} 
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao_texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-segundaria);
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao_subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400; /*propriedade que define o peso da fonte*/
+    font-size: 1.5rem;
+}
+
+.apresentacao_button{
+    display: flex;
+    justify-content: center; 
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);  /*permite que você especifique o estilo, a largura e a cor da borda de um elemento.*/
+    width: 50% ;
+    text-align: center; /*propriedade para centralizar conteudo na página*/
+    border-radius: 8px;/*propriedade para o raio de arredondamento da borda */
+    font-size: 1.5rem;
+    font-weight: 400; /*propriedade para definir o peso da fonte */
+    padding: 21.5px 0; /*propriedade que define uma distância entre o conteúdo de um elemento e suas bordas */
+    text-decoration: none; /*propriedade que remove linhas padrões de links*/
+    color:var(--cor-secundaria);
+    font-family:var(--fonte-primaria);
+}
+
+.apresentacao_button:hover{ /*hover corresponde quando o usuário designa um elemento com um dispositivo apontador */
+    background-color: #272727;
+}
+
+.img_mikael{
+    border-radius: 16px;
+    width: 50%;
+}
+
+.rodape{
+    padding: 24px;
+    color: #000000;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-segundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) { /*@media para adaptar em diversor tamanhos de tela, tendo o uso do V ou F*/
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
+}
+
+/*@media (min-width: 480px ) and (max-width: 800px)
+   
