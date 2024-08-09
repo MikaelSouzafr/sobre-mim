@@ -1,7 +1,7 @@
 # Sobre Mim
 Um portfólio onde armazeno informações sobre o meu trabalho como desenvolvedor e Analista, com informações adicionais sobre a minha carreira profissional. 
 
-## Tecnologias usadas 
+## Tecnologias utilizadas
  HTML <img align="center" alt="Mikael-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> 
  CSS <img align="center" alt="Mikael-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> 
  
@@ -9,6 +9,6 @@ Um portfólio onde armazeno informações sobre o meu trabalho como desenvolvedo
 
 <img src="/img/Captura de tela sobre mim.png">
 
-## Link da Página
+## Link do portfólio
 
 https://sobre-mim-three.vercel.app/
