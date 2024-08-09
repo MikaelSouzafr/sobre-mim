@@ -1,4 +1,4 @@
-# Home-sobre-mim
+# Sobre Mim
 Um portfólio onde armazeno informações sobre o meu trabalho como desenvolvedor e Analista, com informações adicionais sobre a minha carreira profissional. 
 
 ## Tecnologias usadas 
